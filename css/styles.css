@@ -9,11 +9,13 @@
   text-align: center;
   font-size: 25px
 }
+
 .welcome {
   text-align: center;
   margin-top: 25px ;
   font-size: 25px;
 }
+
 #about-me {
   text-align: center;;
   font-size: 30px;
@@ -25,6 +27,7 @@
   font-size: 100px;
   margin: auto;
 }
+
 .connect-icons {
   text-align:center
 }
@@ -60,6 +63,7 @@ a {
   color: #9fdcbf;
   text-decoration: none;
 }
+
 body {
   background-color: white;
   font-family: monospace;
