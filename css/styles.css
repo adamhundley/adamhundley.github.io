@@ -44,10 +44,8 @@
 .sunday-setlist { text-align: justify;
   color: #234567;
   font-size: 20px;
-  /*margin-left: 15%;
-  margin-right: 15%;*/
-  padding-right: 10% ;
-  padding-left: 10%
+  padding-right: 15% ;
+  padding-left: 15%
 }
 
 .blog-post {
