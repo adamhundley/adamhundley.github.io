@@ -2,51 +2,53 @@
 title: 1.31.16
 layout: post
 ---
-<h1>Avoiding Git-Assrophies</h1>
+<div class="sunday-setlist">
+  <h1>Avoiding Git-Assrophies</h1>
 
-</p>Over the past few months at Turing, something that has constantly seemed to confuse me has been Git/Github. I simply want to share some of the basics and knowledge that I have learned throughout my short time programming. This is by NO MEANS an exhaustive list of GIT commands/notes, but hopefully a few of the essentials for you lowly mod 1 people
-<p>
+  </p>Over the past few months at Turing, something that has constantly seemed to confuse me has been Git/Github. I simply want to share some of the basics and knowledge that I have learned throughout my short time programming. This is by NO MEANS an exhaustive list of GIT commands/notes, but hopefully a few of the essentials for you lowly mod 1 people
+  <p>
 
-<h3>DEFINITIONS</h3>
-<ul>
-  <li><strong>Git</strong> is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency(LOCAL)</li>
-  <li><strong>GitHub</strong> is a web-based Git repository hosting service.</li>
+  <h3>DEFINITIONS</h3>
+  <ul>
+    <li><strong>Git</strong> is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency(LOCAL)</li>
+    <li><strong>GitHub</strong> is a web-based Git repository hosting service.</li>
+  </ul>
+
+  <h3>STARTING</h3>
+  <ul>
+    <li><strong>git init</strong> - creates a new empty repo locally on your machine</li>
+    <li><strong>brew install hub</strong> - this installs Hub which is a command line tool that wraps git in order to extend it with extra features and commands that make working with GitHub easier</li>
+    <li><strong>hub create</strong> - this creates a Github repo for you</li>
+  </ul>
+
+  <h3>THE ESSENTIALS</h3> - These are the commands you will probably use the most for basic git workflow
+  <ul>
+    <li><strong>git add -p 'filename'</strong> - stage only listed files for the next commit</li>
+    <li><strong>git add . </strong> - stage all files for a commit that have been changed since the last commit</li>
+    <li><strong>git commit -m 'message'</strong> - commits the staged files to the local git repository</li>
+    <li><strong>git push 'remote' 'branch'</strong> - pushes last commit to github</li>
+    <li><strong>git pull 'remote' 'branch'</strong> - pulls most recent commit from github</li>
+          <li><strong>git log</strong> - shows commit logs</li>
+          <li><strong>git status</strong> - list of changed files</li>
+          <li><strong>git stash</strong> - stashes the changes in a dirty working directory away</li>
+          <li><strong>git stash pop</strong> - brings the stashed working directory back</li>
+          <li><strong>git merge <branch></strong> - merges branch with current branch</li>
+  </ul>
+
+  <h3>BRANCHES</h3> - Branching means you diverge from the main line of development and continue to do work without messing with that main line. The default created branch is master. We create
+  <ul>
+
+    <li><strong>git clone 'url'</strong> - clones an existing repo from github into a new directory</li>
+    <strong>PRO TIP</strong> - use the SSH url or else you will have to include your github login/password to push/pull</li>
+    <li><strong>git fetch</strong> - fetches all branches from all repos</li>
+    <li><strong>git checkout -b <branch></strong> - creates new branch with all the data from the previous branch</li>
+    <li><strong>git checkout <branch></strong> - switches to branch</li>
+  </ul>
+
+  <h3>REMOTES</h3> - Remote repositories are versions of your project that are hosted on the Internet or network somewhere. By default your remote is set to origin. This will benefit you to add
+  <ul>
+
+    <li><strong>git remote -v</strong> - shows a list of the remotes short names, associated urls and the read/write abilities</li>
+    <li><strong>git remote add 'shortname' 'url'</strong> - this adds a new remote Git repo referenced by the short name </li>
 </ul>
-
-<h3>STARTING</h3>
-<ul>
-  <li><strong>git init</strong> - creates a new empty repo locally on your machine</li>
-  <li><strong>brew install hub</strong> - this installs Hub which is a command line tool that wraps git in order to extend it with extra features and commands that make working with GitHub easier</li>
-  <li><strong>hub create</strong> - this creates a Github repo for you</li>
-</ul>
-
-<h3>THE ESSENTIALS</h3> - These are the commands you will probably use the most for basic git workflow
-<ul>
-  <li><strong>git add -p 'filename'</strong> - stage only listed files for the next commit</li>
-  <li><strong>git add . </strong> - stage all files for a commit that have been changed since the last commit</li>
-  <li><strong>git commit -m 'message'</strong> - commits the staged files to the local git repository</li>
-  <li><strong>git push 'remote' 'branch'</strong> - pushes last commit to github</li>
-  <li><strong>git pull 'remote' 'branch'</strong> - pulls most recent commit from github</li>
-        <li><strong>git log</strong> - shows commit logs</li>
-        <li><strong>git status</strong> - list of changed files</li>
-        <li><strong>git stash</strong> - stashes the changes in a dirty working directory away</li>
-        <li><strong>git stash pop</strong> - brings the stashed working directory back</li>
-        <li><strong>git merge <branch></strong> - merges branch with current branch</li>
-</ul>
-
-<h3>BRANCHES</h3> - Branching means you diverge from the main line of development and continue to do work without messing with that main line. The default created branch is master. We create
-<ul>
-
-  <li><strong>git clone 'url'</strong> - clones an existing repo from github into a new directory</li>
-  <strong>PRO TIP</strong> - use the SSH url or else you will have to include your github login/password to push/pull</li>
-  <li><strong>git fetch</strong> - fetches all branches from all repos</li>
-  <li><strong>git checkout -b <branch></strong> - creates new branch with all the data from the previous branch</li>
-  <li><strong>git checkout <branch></strong> - switches to branch</li>
-</ul>
-
-<h3>REMOTES</h3> - Remote repositories are versions of your project that are hosted on the Internet or network somewhere. By default your remote is set to origin. This will benefit you to add
-<ul>
-
-  <li><strong>git remote -v</strong> - shows a list of the remotes short names, associated urls and the read/write abilities</li>
-  <li><strong>git remote add 'shortname' 'url'</strong> - this adds a new remote Git repo referenced by the short name </li>
-</ul>
+</div>
